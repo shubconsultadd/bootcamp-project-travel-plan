@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 import os
-from .secrets import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -181,7 +180,7 @@ CORS_ALLOW_HEADERS = ['Authorization', 'Content-Type']
 
 STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"}}
 
-AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY
+AWS_ACCESS_KEY_ID = 'AKIA5PRQMJDMHSOJLNN3'
+AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'travelplanimages'
 AWS_QUERYSTRING_AUTH = False
